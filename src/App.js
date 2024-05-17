@@ -4,30 +4,35 @@ import React from 'react';
 import ReactDOM, { createPortal } from 'react-dom';
 import { createRoot } from 'react-dom';
 import Laptop from './classes/laptop';
-import Repo from './repo/repo';
+import Display from './pages/display';
+import {Link} from 'react-router-dom';
+import { useState } from 'react';
+import { Routes, Route, browserRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
+import AddItemPage from './pages/addItemPage';
+import { useContext } from 'react';
+import {useNavigate} from 'react-router-dom';
+import { createContext } from 'react';
+
+import { LaptopContext, LaptopProvider } from './contexts/laptopcontext';
+import EditItemPage from './pages/editItemPage';
 
 function App() {
-	const repo = new Repo();
-	console.log(repo.getLaptops());
-	const [temp, setTemp] = React.useState("");
-	return(
+	return (
 		<div>
-		<h1>Serus</h1>
-		<ul>
-		{repo.getLaptops().map((laptop) => <li>{laptop.getLaptopName()}</li>)}
-		</ul>
-		<input 
-			type="text"
-			onChange={(e) => setTemp(e.target.value)}
-		/>
-		<button onClick={ () => {
-			repo.addLaptop([temp]);
-		} 
-		}>Add</button>
+			<LaptopProvider>
+				<BrowserRouter>
+					<Routes>
+						<Route path="/" element={<Display  />} />
+						<Route path="/addItemPage" element={<AddItemPage />} />
+						<Route path="/editItemPage" element={<EditItemPage />}/>
+					</Routes>
+				</BrowserRouter>
+			</LaptopProvider>
 		</div>
-	
-	
 	);
+
+
 }
 
 export default App;

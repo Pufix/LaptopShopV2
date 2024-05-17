@@ -1,0 +1,24 @@
+table, th, td {
+    border: 1px solid black;
+}
+/* Default dark theme */
+body {
+  background-color: #282c34;
+  color: #ffffff;
+}
+
+a {
+  color: #cccccc;
+}
+
+button {
+  background-color: #cccccc;
+  color: #282c34;
+}
+
+input, textarea {
+  background-color: #282c34;
+  color: #ffffff;
+  border-color: #cccccc;
+}
+
