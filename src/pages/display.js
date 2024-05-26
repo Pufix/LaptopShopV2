@@ -188,7 +188,9 @@ export default function Display(){
                         Delete Item
                     </th>
                 </tr>
+                <tbody>
                     {sortedTable(laptopArray, removeLaptop, addLaptop, sortBy, reversed, changeRoute, deleteButton, getManufacturerById)}
+                </tbody>
             </table>
             <table>
                 <tr>
@@ -202,8 +204,9 @@ export default function Display(){
                         Delete Item
                     </th>
                 </tr>
+                <tbody>
                 {sortedTableManufacturers(manufacturers, removeManufacturer, addManufacturer, sortByManufacturer, reversedManufacturer, changeRoute, deleteButtonManufacturer)}
-                
+                </tbody>
             </table>
         </Layout>
     );

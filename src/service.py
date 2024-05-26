@@ -476,5 +476,5 @@ def run_tests():
 CORS(app)
 
 if __name__ == '__main__':
-    run_tests()
+    #run_tests()
     app.run(debug=True)

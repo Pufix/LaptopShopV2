@@ -20,15 +20,17 @@ import EditItemPage from './pages/editItemPage';
 function App() {
 	return (
 		<div>
-			<LaptopProvider>
-				<BrowserRouter>
-					<Routes>
-						<Route path="/" element={<Display  />} />
-						<Route path="/addItemPage" element={<AddItemPage />} />
-						<Route path="/editItemPage" element={<EditItemPage />}/>
-					</Routes>
-				</BrowserRouter>
-			</LaptopProvider>
+			<center>
+				<LaptopProvider>
+					<BrowserRouter>
+						<Routes>
+							<Route path="/" element={<Display  />} />
+							<Route path="/addItemPage" element={<AddItemPage />} />
+							<Route path="/editItemPage" element={<EditItemPage />}/>
+						</Routes>
+					</BrowserRouter>
+				</LaptopProvider>
+			</center>
 		</div>
 	);
 

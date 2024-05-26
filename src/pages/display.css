@@ -1,24 +1,78 @@
-table, th, td {
-    border: 1px solid black;
-}
-/* Default dark theme */
+/* Global Styles */
 body {
   background-color: #282c34;
   color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 a {
+  color: #999999;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
   color: #cccccc;
 }
 
+/* Buttons */
 button {
+  background-color: #999999;
+  color: #282c34;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
   background-color: #cccccc;
   color: #282c34;
 }
 
-input, textarea {
+/* Form Elements */
+input,
+textarea {
   background-color: #282c34;
   color: #ffffff;
+  border: 1px solid #999999;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+input:focus,
+textarea:focus {
   border-color: #cccccc;
 }
 
+/* Tables */
+table {
+  width: auto; /* Set width to auto to fit content */
+  margin: 0 auto; /* Center the table */
+  border-collapse: collapse;
+}
+
+th,
+td {
+  background-color: #999999;
+  color: #282c34;
+  white-space: nowrap; /* Prevent wrapping of header text */
+}
+
+/* Table Header */
+th {
+  background-color: #999999;
+  color: #282c34;
+}
+
+/* Table Body */
+tbody tr:nth-child(even) {
+  background-color: #363c4e;
+}
+
+tbody tr:hover {
+  background-color: #444c5e;
+}
