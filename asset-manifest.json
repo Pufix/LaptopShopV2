@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/LaptopShopV2/static/css/main.44fbacbb.css",
+    "main.js": "/LaptopShopV2/static/js/main.ef564c3e.js",
+    "static/js/453.21755e3a.chunk.js": "/LaptopShopV2/static/js/453.21755e3a.chunk.js",
+    "static/media/logo.svg": "/LaptopShopV2/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/LaptopShopV2/index.html",
+    "main.44fbacbb.css.map": "/LaptopShopV2/static/css/main.44fbacbb.css.map",
+    "main.ef564c3e.js.map": "/LaptopShopV2/static/js/main.ef564c3e.js.map",
+    "453.21755e3a.chunk.js.map": "/LaptopShopV2/static/js/453.21755e3a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.44fbacbb.css",
+    "static/js/main.ef564c3e.js"
+  ]
+}
